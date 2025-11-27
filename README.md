@@ -1,3 +1,11 @@
+# FIAP - Faculdade de Informática e Administração Paulista
+
+<p align="center">
+<a href= "https://www.fiap.com.br/"><img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
+</p>
+
+<br>
+
 # Classificação Automática de Grãos com Machine Learning
 
 ## Descrição do Projeto
@@ -50,17 +58,23 @@ Cálculo de estatísticas descritivas para entender a distribuição dos dados:
 
 **Histogramas:** Mostram a distribuição de cada característica física dos grãos.
 
+![Distribuição das Características](images/graficos/Visualização%20das%20distruição%20das%20caracteristicas%20.png)
+
 **Resultado observado:** A maioria das características apresenta distribuição aproximadamente normal, indicando boa qualidade dos dados para algoritmos de Machine Learning.
 
 ### 4. Análise de Outliers
 
 **Boxplots:** Identificação de valores atípicos em cada característica.
 
+![Boxplots para Outliers](images/graficos/Boxplots%20para%20identificar%20outliers%20.png)
+
 **Conclusão:** Poucos outliers detectados, indicando consistência nas medições dos grãos.
 
 ### 5. Análise de Correlação
 
 **Matriz de Correlação:** Identificação de relações lineares entre características.
+
+![Matriz de Correlação](images/graficos/matriz%20de%20correlação.png)
 
 **Correlações altas identificadas:**
 - Área e Perímetro: 0.994
@@ -72,6 +86,8 @@ Cálculo de estatísticas descritivas para entender a distribuição dos dados:
 ### 6. Análise de Separabilidade das Classes
 
 **Gráficos de Dispersão:** Visualização da separabilidade entre as três variedades de trigo.
+
+![Gráficos de Dispersão](images/graficos/Graficos%20de%20dispersão%20para%20visualizar%20%20.png)
 
 **Observações:**
 - Classes apresentam boa separabilidade visual
@@ -126,6 +142,8 @@ X_test_scaled = scaler.transform(X_test)
 - Matriz de confusão
 - Precisão, Recall e F1-score
 
+![Comparação Visual dos Resultados](images/graficos/comparacao%20visual%20de%20resultados%20.png)
+
 **Resultados iniciais:**
 - Random Forest: 92.1% acurácia
 - SVM: 90.5% acurácia
@@ -159,6 +177,8 @@ param_grid = {
 
 **Performance após otimização:**
 
+![Comparação Antes e Depois da Otimização](images/graficos/comparação%20antes%20e%20depois%20otimização.png)
+
 | Modelo | Acurácia | CV Média | Melhoria |
 |--------|----------|----------|----------|
 | Random Forest | 95.2% | 94.8% | +3.1% |
@@ -173,6 +193,8 @@ param_grid = {
 - **Acurácia:** 95.2%
 - **Configuração otimizada:** n_estimators=100, max_depth=20
 
+![Identificação do Melhor Modelo](images/graficos/identificação%20do%20melhor%20modelo.png)
+
 **Importância das Características:**
 1. Área do grão: 23%
 2. Perímetro: 19%
@@ -180,6 +202,8 @@ param_grid = {
 4. Compacidade: 15%
 
 ### 13. Matriz de Confusão do Melhor Modelo
+
+![Matriz de Confusão](images/graficos/matriz%20de%20confusão%20.png)
 
 **Análise de Erros:**
 - Total de erros: 3 de 63 amostras (4.8%)
