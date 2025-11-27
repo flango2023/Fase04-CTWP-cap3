@@ -7,6 +7,7 @@
 <br>
 
 # Classificação Automática de Grãos com Machine Learning
+### Aluno: Richard Schmitz RM567951
 
 ## Descrição do Projeto
 
@@ -289,8 +290,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn plotly jupyter
 - **Matplotlib/Seaborn:** Visualização
 - **Plotly:** Gráficos interativos
 
-## Autor
-
-**Richard Schmitz - RM567951**  
 Projeto desenvolvido para a disciplina de Machine Learning - FIAP  
-Novembro 2024
+
+## Licença
+Este projeto foi desenvolvido em partes com a ajuda de ferramentas IA ( Amazon Titan and GPT)
